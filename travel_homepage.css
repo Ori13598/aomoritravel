@@ -47,11 +47,23 @@
 }
 .mid_area{
 	height: 350px;
-	display: flex;
-	flex-direction: row;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
 	column-gap: 5px;
-	row-gap: 5px;
+	row-gap: 40px;
 	margin-top: 5px;
+}
+@media (max-width: 600px){
+	.mid_area{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+}
+@media (max-width: 400px){
+	.mid_area{
+		display: grid;
+		grid-template-columns: 1fr;
+	}
 }
 .mid1_div_travelspot{
 	max-width: 250px;
@@ -79,10 +91,10 @@
 	padding-left: 10px;
 }
 .mid1_div_con{
-	background-color: rgb(237, 249, 252);
-	margin-top: 0%;
+	background-color: rgb(249, 241, 224);
 	display: inline-block;
-
+	border-radius: 5px;
+	box-shadow: 3px 3px 5px rgba(241, 150, 97, 0.3);
 }
 .mid1_div_tagname{
 	display: flexbox;
@@ -101,4 +113,6 @@
 }
 .mid1_con_copy{
 	display: inline-block;
+	border-radius: 5px;
+	background-color: rgb(245, 192, 138);
 }
