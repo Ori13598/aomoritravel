@@ -5,6 +5,8 @@
 	row-gap: 10px;
 	object-position: center;
 	margin-bottom: 50px;
+	margin-left: 10%;
+	margein-right:10%
 
 }
 .top_title{
@@ -52,6 +54,8 @@
 	column-gap: 5px;
 	row-gap: 40px;
 	margin-top: 5px;
+	margin-left: 10%;
+	margein-right:10%
 }
 @media (max-width: 600px){
 	.mid_area{
