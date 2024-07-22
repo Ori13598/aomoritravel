@@ -105,3 +105,52 @@ opacity: 1;
 
 
 input:checked + .slide-container .nav label { display: block; }
+
+/* back to homepage button*/
+html{
+  scroll-behavior: smooth;
+}
+.scroll_up{
+  position: fixed;
+  bottom: 5px;
+  right:5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(126, 124, 122);
+  border-radius: 5px;
+  width: 25px;
+  height:25px;
+  padding: 5px;
+  text-decoration: none;
+  transform: 0.2s ease-out;
+}
+
+.scroll_up:hover{
+  background-color: rgb(221, 135, 49);
+}
+.scroll_up:hover span{
+  transform: translateY(-4px);
+}
+.material-symbols-outlined{
+  color: #ffffff;
+  font-size: 14px;
+  transform: 0.2s ease-out;
+}
+.Back_to_homepage{
+  position: fixed;
+  bottom: 50px;
+  right:5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(126, 124, 122);
+  border-radius: 5px;
+  width: 25px;
+  height:25px;
+  padding: 5px;
+  text-decoration: none;
+  transform: 0.2s ease-out;
+}
+.Back_to_homepage:hover{
+  background-color: rgb(221, 135, 49);
