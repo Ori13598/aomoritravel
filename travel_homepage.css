@@ -5,8 +5,6 @@
 	row-gap: 10px;
 	object-position: center;
 	margin-bottom: 50px;
-	margin-left: 10%;
-	margein-right:10%
 
 }
 .top_title{
@@ -18,6 +16,7 @@
 }
 .top_div_web{
 	object-fit: contain;
+	display: inline-block;
 }
 .top_button_web{
 	height: 40px;
@@ -52,37 +51,48 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	column-gap: 5px;
-	row-gap: 40px;
+	row-gap: 105px;
 	margin-top: 5px;
-	margin-left: 10%;
-	margein-right:10%
+	margin-left: 15%;
+	margin-right: 15%;
 }
 @media (max-width: 600px){
 	.mid_area{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
+		column-gap: 5px;
+		row-gap: 105px;
+		margin-top: 5px;
+		margin-left: 15%;
+		margin-right: 15%;
 	}
 }
 @media (max-width: 400px){
 	.mid_area{
 		display: grid;
 		grid-template-columns: 1fr;
+		column-gap: 5px;
+		row-gap: 105px;
+		margin-top: 5px;
+		margin-left: 15%;
+		margin-right: 15%;
 	}
 }
 .mid1_div_travelspot{
-	max-width: 250px;
+	max-width: 350px;
 	max-height: 350px;
 	display: grid;
 	grid-template-rows: 1fr 1fr;
 	background-color: rgb(255, 255, 255);
 }
 .mid1_div_img{
-	width: 250px;
-	height: 250px;
+	position: cover;
+	width: 350px;
+	height: 350px;
 }
 .mid1_img{
-	height: 240px;
-	width: 240px;
+	height: 100%;
+	width: 100%;
 	border-radius: 10px;
 	padding-top: 2px;
 	padding-left: 5px;
