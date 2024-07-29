@@ -53,8 +53,8 @@
 	column-gap: 5px;
 	row-gap: 105px;
 	margin-top: 5px;
-	margin-left: 15%;
-	margin-right: 15%;
+	margin-left: 5px;
+	margin-right: 5px;
 }
 @media (max-width: 600px){
 	.mid_area{
@@ -63,8 +63,8 @@
 		column-gap: 5px;
 		row-gap: 105px;
 		margin-top: 5px;
-		margin-left: 15%;
-		margin-right: 15%;
+		margin-left: 5%;
+		margin-right: 5%;
 	}
 }
 @media (max-width: 400px){
