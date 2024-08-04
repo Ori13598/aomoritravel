@@ -17,7 +17,7 @@
     <!--this is top page =>> signal: top-->
     <div class="top">  
       <div class="top_title">
-        <a style="color:rgb(221, 135, 49); text-shadow:3px 3px 5px #ffce8d4d;font-family: Roboto, sans-serif;  font-weight: 900;
+        <a style="color:rgb(230, 109, 23); text-shadow:3px 3px 5px #ffce8d4d;font-family: Roboto, sans-serif;  font-weight: 900;
   font-style: normal;" ><strong>Welcome to Aomori</strong></a>
       </div>   
       <div class="top_div_web">
@@ -26,6 +26,23 @@
       <div class="top_div_ins">
       <button class="top_button_web"> <a href="https://aomori-tourism.com/" target="_blank"><img class="top_img_logo" src="image\travel_homepage\travel_homepage1.png"></a></button>
       </div>
+    </div>
+    <div>
+      <p>Infor and event each month</p>
+      <select class="monthvalue" onchange="getmonthvalue();">
+        <option value="January">January</option>
+        <option value="February">February</option>
+        <option value="March">March</option>
+        <option value="April">April</option>
+        <option value="May">May</option>
+        <option value="June">June</option>
+        <option value="July">July</option>
+        <option value="August">August</option>
+        <option value="September">September</option>
+        <option value="October">October</option>
+        <option value="November">November</option>
+        <option value="December">December</option>
+      </select>
     </div>
     <!--this is the middle page according to location signal: mid_area-->
     <p>Aomori city</p>
@@ -36,8 +53,8 @@
           <img class="mid1_img" src="image\travel_spot\travelspot_aomorieki\aomoricity_1.png">
         </div>
         <div class="mid1_div_con">
-          <span class="mid1_con_travelspotname"><a href="https://ori13598.github.io/aomoritravel/travel_travelspot1.html"><strong>Aomori city monument</strong></a></span>
-          <span class="mid1_con_tagname_1">#aomoricity #aomoritravel #aomoritravelspot #aomori</span>
+          <p class="mid1_con_travelspotname"><a href="https://ori13598.github.io/aomoritravel/travel_travelspot2.html"><strong>Aomori city monument</strong></a></p>
+          <span class="mid1_con_tagname">#aomoricity #aomoritravel #aomoritravelspot #aomori</span>
           <button class="mid1_con_copy" onclick="copybutton();">copy</button>
         </div>
       </div>
@@ -69,6 +86,88 @@
         function copybutton(){
           const content = document.querySelector('.mid1_con_tagname_1').innerHTML;
           navigator.clipboard.writeText(content);
+        }
+        function getmonthvalue(){
+            const monthvalue =document.querySelector('.monthvalue').value;
+          if(monthvalue==='January'){
+             const content =` 
+             <!--this is the middle page according to location signal: mid_area-->
+              <div class="mid_area">
+              <!--this is travel spot of Aomori city =>> signal: mid1-->
+                <div class="mid1_div_travelspot">
+                  <div class="mid1_div_img">
+                    <img class="mid1_img" src="image\travel_spot\travelspot_aomorieki\aomoricity_1.png">
+                  </div>
+                  <div class="mid1_div_con">
+                    <p class="mid1_con_travelspotname"><a href="https://ori13598.github.io/aomoritravel/travel_travelspot2.html"><strong>Aomori city monument</strong></a></p>
+                    <span class="mid1_con_tagname">#aomoricity #aomoritravel #aomoritravelspot #aomori</span>
+                    <button class="mid1_con_copy" onclick="copybutton();">copy</button>
+                  </div>
+                </div>
+              <!--this is travel spot of Aomori city =>> signal: mid-->
+                <div class="mid1_div_travelspot">
+                  <div class="mid1_div_img">
+                    <img class="mid1_img" src="image\travel_spot\travelspot_aomorieki\aomoricity_2.png">
+                  </div>
+                  <div class="mid1_div_con">
+                    <span class="mid1_con_travelspotname"><strong>Aomori station</strong></span>
+                    <span class="mid1_con_tagname">#aomoricity #aomoritravel #aomoritravelspot #aomori</span>
+                    <button onclick="" class="mid1_con_copy">copy</button>
+                  </div>
+                </div>
+              <!--this is travel spot of Aomori city =>> signal: mid-->
+                <div class="mid1_div_travelspot">
+                  <div class="mid1_div_img">
+                    <img class="mid1_img" src="image\travel_spot\travelspot_aomorieki\aomoricity_3.jpg">
+                  </div>
+                  <div class="mid1_div_con">
+                    <span class="mid1_con_travelspotname">Aoiumi Park</span>
+                    <span class="mid1_con_tagname" >#aomoricity #aomoritravel #aomoritravelspot #aomori</span>
+                    <button class="mid1_con_copy">copy</button>
+                  </div>
+                </div>
+              </div>`; 
+            document.querySelector('.mid_area').innerHTML=content;
+          } else if (monthvalue==='February'){
+            const content =` 
+             <!--this is the middle page according to location signal: mid_area-->
+              <div class="mid_area">
+              <!--this is travel spot of Aomori city =>> signal: mid1-->
+                <div class="mid1_div_travelspot">
+                  <div class="mid1_div_img">
+                    <img class="mid1_img" src="image\travel_spot\travelspot_aomorieki\aomoricity_2.png">
+                  </div>
+                  <div class="mid1_div_con">
+                    <p class="mid1_con_travelspotname"><a href="https://ori13598.github.io/aomoritravel/travel_travelspot2.html"><strong>Aomori city monument</strong></a></p>
+                    <span class="mid1_con_tagname">#aomoricity #aomoritravel #aomoritravelspot #aomori</span>
+                    <button class="mid1_con_copy" onclick="copybutton();">copy</button>
+                  </div>
+                </div>
+              <!--this is travel spot of Aomori city =>> signal: mid-->
+                <div class="mid1_div_travelspot">
+                  <div class="mid1_div_img">
+                    <img class="mid1_img" src="image\travel_spot\travelspot_aomorieki\aomoricity_1.png">
+                  </div>
+                  <div class="mid1_div_con">
+                    <span class="mid1_con_travelspotname"><strong>Aomori station</strong></span>
+                    <span class="mid1_con_tagname">#aomoricity #aomoritravel #aomoritravelspot #aomori</span>
+                    <button onclick="" class="mid1_con_copy">copy</button>
+                  </div>
+                </div>
+              <!--this is travel spot of Aomori city =>> signal: mid-->
+                <div class="mid1_div_travelspot">
+                  <div class="mid1_div_img">
+                    <img class="mid1_img" src="image\travel_spot\travelspot_aomorieki\aomoricity_3.jpg">
+                  </div>
+                  <div class="mid1_div_con">
+                    <span class="mid1_con_travelspotname">Aoiumi Park</span>
+                    <span class="mid1_con_tagname" >#aomoricity #aomoritravel #aomoritravelspot #aomori</span>
+                    <button class="mid1_con_copy">copy</button>
+                  </div>
+                </div>
+              </div>`; 
+            document.querySelector('.mid_area').innerHTML=content;
+          }
         }
     </script>
   </body>
