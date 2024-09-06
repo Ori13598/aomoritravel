@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Aomori city travel website
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="travel_homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+    <!--TOP-->
+    <div class="TOP">
+      <!--TOP HOMEPAGE-->
+      <div class="top_homepage">  
+        <div class="top_title">
+          <a class="top_title_content" ><strong>Welcome to Aomori</strong></a>
+        </div>   
+        <div class="top_div_ins">
+          <button  class="top_button_ins"> <a href="https://www.instagram.com/marugotoaomori/" target="_blank"><i class="fa fa-instagram" style="font-size:35px;color:rgb(237, 109, 24)"></i></a></button>
+        </div>
+        <div class="top_div_web">
+        <button class="top_button_web"> <a href="https://aomori-tourism.com/" target="_blank"><img class="top_img_logo" src="image/01.TOP/travel_homepage1.png"></a></button>
+        </div>
+      </div>
+      <!--TOP OPTION-->
+      <div class="top_option">
+        <div class="top_option_month">
+          <p class="top_option_month_content">Monthly information & event</p>
+          <select class="top_option_month_monthvalue" name="monthvalue" onchange="getmonthvalue();">
+            <option value="Mon" >Month</option>
+            <option value="JAN" >January</option>
+            <option value="FEB" >February</option>
+            <option value="MAR" >March</option>
+            <option value="APR" >April</option>
+            <option value="MAY" >May</option>
+            <option value="JUN" >June</option>
+            <option value="JUL" >July</option>
+            <option value="AUG" >August</option>
+            <option value="SEP" >September</option>
+            <option value="OCT" >October</option>
+            <option value="NOV" >November</option>
+            <option value="DEC">December</option>
+          </select>
+        </div>
+        <div class="top_option_language">
+          <p class="top_option_language_content">Language・言語</p>
+          <select class="top_option_language_la" name="lang" onchange="getlanguagevalue();">
+            <option value="En">ENGLISH</option>
+            <option value="Jp">日本語</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <!--MID-->
+    <div class="MID">
+      <!--MID sightseeing-->
+      <div class="MID_area_sightseeing" id="Mid_sightseeing">
+         <!--MID sightseeing Title-->
+        <div class="MID_title">
+          <p class="MID_title_content" id="MID_title_content_sightseeing">SIGHTSEEING</p>
+        </div>
+         <!--MID sightseeing content-->
+        <div class="MID_content MID_content_sightseeing">
+        </div>   
+      </div>
+        <!--MID foodtour-->
+        <div class="MID_area_foodtour" id="Mid_foodtour">
+          <!--MID Foodtour Title-->
+          <div class="MID_title">
+            <p class="MID_title_content" id="MID_title_content_foodtour">FOOD TOUR</p>
+          </div>
+          <!--MID Foodtour content-->
+          <div class="MID_content MID_content_foodtour">
+          </div>
+        </div>
+        <!--MID entertainment-->
+        <div class="MID_area_entertainment" id="Mid_entertainment">
+          <!--MID Entertainment Title-->
+          <div class="MID_title">
+            <p class="MID_title_content" id="MID_title_content_entertainment">ENTERTAINMENT</p>
+          </div>
+          <!--MID Entertainment content-->
+          <div class="MID_content MID_content_entertainment">
+          </div>
+        </div>
+    </div>
+    <script src="database.js"></script>
+    <script src="TH_generateHTML.js"></script>
+    <script src="TH_monthlyvalue_languagevalue_change.js"></script>
+    <!--<script src="showslidefunction.js"></script>-->
+  </body>
+</html>

@@ -1,0 +1,229 @@
+body{
+	width: 100%;
+	height:auto;
+}
+/* TOP*/
+.TOP{
+
+}
+/* TOP HOMEPAGE*/
+.top_homepage{
+	display: grid;
+	grid-template-columns: 1fr 60px 90px 30px;
+	column-gap: 10px;
+	row-gap: 10px;
+	object-position: center;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	text-align: center;
+
+}
+.top_title{
+	font-size: 30px;
+	max-width: 1000px;
+	display: inline-block;
+	object-position: center;
+	object-fit: center;
+	text-align: center;
+}
+.top_title_content{
+	font-size: 30px;
+	color: coral;
+	text-shadow: 2px 2px 4px coral;
+	text-align: center;
+}
+.top_div_web{
+	object-fit: contain;
+	display: inline-block;
+	text-shadow: 2px 2px 4px rgb(227, 113, 71);
+	text-align: center;
+}
+.top_button_web{
+	height: 40px;
+	border-radius: 4px;
+	background-color: rgb(253, 253, 253);
+	border-color: rgb(172, 122, 35);
+	max-width: 100px;
+	object-position: right;
+	display: inline-block;
+	box-shadow: 2px 2px 4px coral;
+	text-align: center;
+}
+.top_img_logo{
+	height: 35px;
+	display: inline-block;
+	border-radius: 2px;
+	object-fit: center;
+	object-position: center;
+	text-align: center;
+}
+.top_button_ins{
+	font-style:border;
+	height: 40px;
+	border-radius: 4px;
+	background-color: rgb(255, 255, 255);
+	border-color: rgb(187, 51, 10);
+	margin-left: 5px;
+	max-width: 100px;
+	object-position: right;
+	display: inline-block;
+	box-shadow: 2px 2px 4px coral;
+	text-align: center;
+}
+/* TOP OPTION*/
+.top_option{
+	display: grid;
+	grid-template-columns: 1fr 150px 30px;
+	text-align: center;
+}
+.top_option_month_content{
+	font-size: 22px;
+	font-weight: bold;
+	color: rgb(254, 197, 106);
+	text-shadow: 1px 1px 2px rgb(215, 168, 93);
+	margin: 2px;
+	text-align: center;
+}
+.top_option_month_monthvalue{
+	background-color: rgb(254, 254, 250);
+	border-radius: 5px;
+	border-color: rgb(240, 147, 113);
+	border-width: 1.2px;
+	box-shadow: 1px 1px 2px coral;
+	text-align: center;
+
+}
+.top_option_language{
+	text-align: center;
+}
+.top_option_language_content{
+	font-size: 16px;
+	font-weight: bold;
+	color: rgb(75, 64, 46);
+	text-shadow: 1px 1px 2px rgb(159, 153, 144);
+	margin-top: 8px;
+	margin-bottom: 6px;
+	text-align: center;
+}
+.top_option_language_la{
+	background-color: rgb(254, 254, 250);
+	border-radius: 5px;
+	border-color: rgb(111, 97, 92);
+	border-width: 1.2px;
+	box-shadow: 1px 1px 2px rgb(116, 113, 112);
+	text-align: center;
+}
+
+/* MID*/
+.MID{
+	display: flex;
+	flex-direction: column;
+}
+.MID_area_sightseeing{
+	display: grid;
+	grid-template-rows: 50px 1fr;
+}
+.MID_area_foodtour{
+	display: grid;
+	grid-template-rows: 50px 1fr;
+}
+.MID_area_entertainment{
+	display: grid;
+	grid-template-rows: 50px 1fr;
+}
+.MID_title{
+	background-color: rgb(255, 182, 155);
+	display: inline-block;
+	margin-left: 150px;
+	margin-right: 150px;
+	border-radius: 10px;
+	margin-bottom: 8px;
+	margin-top: 10px;
+	box-shadow: 1px 1px 2px rgb(251, 160, 127);
+	text-align: center;
+}
+.MID_title_content{
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	margin-top: 7px;
+	margin-bottom: 2px;
+	text-align: center;
+}
+.MID_content{
+	display: flex;
+	flex-direction: row;
+	column-gap: 10px;
+	justify-content: center
+}
+.MID_travelspot{
+	display: block;
+	position: relative;
+	height: 250px;
+	width: 200px;
+}
+.fade{
+	display: none;
+	position: absolute;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+@keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+  }
+.MID_travelspot_image_img{
+	object-fit: cover;
+	width: 200px;
+	height: 200px;
+	vertical-align: middle;
+	border-radius: 5px;
+	box-shadow: 2px 2px 4px rgb(211, 198, 193);
+}
+.MID_travelspot_infor_tag{
+	font-size: 14px;
+	color: rgb(254, 140, 98);
+	font-weight: bold;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	display: absolute;
+	bottom: 2px;
+}
+/* Next & previous buttons */
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: 5px;
+	padding: 8px;
+	margin-top: -22px;
+	color: white;
+	background-color: antiquewhite;
+	opacity: 80%;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+  }
+  
+  /* Position the "prev button" to the right */
+  .prev{
+	padding-left: 4px;
+	padding-right: 8px;
+	border-radius: 0 3px 3px 0;
+  }
+  .next {
+	padding-right: 10px;
+	right: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a grey background color */
+  .prev:hover, .next:hover {
+	background-color: #f1f1f1;
+	color: black;
+  }
+
