@@ -8,16 +8,17 @@
           <div class="MID_travelspot">
             <div class="MID_travelspot_carousel_sightseeing${a} fade">
                 <img class="MID_travelspot_image_img" src=${DB_sightseeing_JAN[`${a-1}`].image1}>
-                <p class ="MID_travelspot_infor_tag">${DB_sightseeing_JAN[`${a-1}`].content1}</p>
+                <p class ="MID_travelspot_infor_tag">${DB_sightseeing_JAN[`${a-1}`].content1.jpcontent}</p>
             </div>
             <div class="MID_travelspot_carousel_sightseeing${a} fade">
                 <img class="MID_travelspot_image_img" src="${DB_sightseeing_JAN[`${a-1}`].image2}">
-              <p class ="MID_travelspot_infor_tag">${DB_sightseeing_JAN[`${a-1}`].content2}</p>
+              <p class ="MID_travelspot_infor_tag">${DB_sightseeing_JAN[`${a-1}`].content2.jpcontent}</p>
             </div>
             <div class="MID_travelspot_carousel_sightseeing${a} fade">
                 <img class="MID_travelspot_image_img" src="${DB_sightseeing_JAN[`${a-1}`].image3}">
-              <p class ="MID_travelspot_infor_tag">${DB_sightseeing_JAN[`${a-1}`].content3}</p>
+              <p class ="MID_travelspot_infor_tag">${DB_sightseeing_JAN[`${a-1}`].content3.jpcontent}</p>
             </div>
+            <img class="MID_travelspot_image_gif" src="image/Apple.gif">
             <a class="prev prevsightseeing" onclick="plusSlides_sightseeing(-1, ${a-1})">❮</a>
             <a class="next nextsightseeing" onclick="plusSlides_sightseeing(1, ${a-1})">❯</a>
           </div>`;
@@ -39,15 +40,15 @@
             <div class="MID_travelspot">
               <div class="MID_travelspot_carousel_foodtour${b} fade">
                 <img class="MID_travelspot_image_img" src="${DB_foodtour_JAN[`${b-1}`].image1}">
-                <p class ="MID_travelspot_infor_tag">${DB_foodtour_JAN[`${b-1}`].content1}</p>
+                <p class ="MID_travelspot_infor_tag">${DB_foodtour_JAN[`${b-1}`].content1.jpcontent}</p>
              </div>
               <div class="MID_travelspot_carousel_foodtour${b} fade">
                 <img class="MID_travelspot_image_img" src="${DB_foodtour_JAN[`${b-1}`].image2}">
-                <p class ="MID_travelspot_infor_tag">${DB_foodtour_JAN[`${b-1}`].content2}</p>
+                <p class ="MID_travelspot_infor_tag">${DB_foodtour_JAN[`${b-1}`].content2.jpcontent}</p>
               </div>
               <div class="MID_travelspot_carousel_foodtour${b} fade">
                 <img class="MID_travelspot_image_img" src="${DB_foodtour_JAN[`${b-1}`].image3}">
-                <p class ="MID_travelspot_infor_tag">${DB_foodtour_JAN[`${b-1}`].content3}</p>
+                <p class ="MID_travelspot_infor_tag">${DB_foodtour_JAN[`${b-1}`].content3.jpcontent}</p>
               </div>
               <a class="prev prevfoodtour" onclick="plusSlides_foodtour(-1, ${b-1})">❮</a>
               <a class="next nextfoodtour" onclick="plusSlides_foodtour(1, ${b-1})">❯</a>
@@ -69,15 +70,15 @@
             <div class="MID_travelspot">
               <div class="MID_travelspot_carousel_entertainment${c} fade">
                   <img class="MID_travelspot_image_img" src="${DB_entertainment_JAN[`${c-1}`].image1}">
-                <p class ="MID_travelspot_infor_tag">${DB_entertainment_JAN[`${c-1}`].content1}</p>
+                <p class ="MID_travelspot_infor_tag">${DB_entertainment_JAN[`${c-1}`].content1.jpcontent}</p>
               </div>
               <div class="MID_travelspot_carousel_entertainment${c} fade">
                 <img class="MID_travelspot_image_img" src="${DB_entertainment_JAN[`${c-1}`].image2}">
-                <p class ="MID_travelspot_infor_tag">${DB_entertainment_JAN[`${c-1}`].content2}</p>
+                <p class ="MID_travelspot_infor_tag">${DB_entertainment_JAN[`${c-1}`].content2.jpcontent}</p>
               </div>
               <div class="MID_travelspot_carousel_entertainment${c} fade">
                 <img class="MID_travelspot_image_img" src="${DB_entertainment_JAN[`${c-1}`].image3}">
-                <p class ="MID_travelspot_infor_tag">${DB_entertainment_JAN[`${c-1}`].content3}</p>
+                <p class ="MID_travelspot_infor_tag">${DB_entertainment_JAN[`${c-1}`].content3.jpcontent}</p>
               </div>
               <a class="prev preventertainment" onclick="plusSlides_entertainment(-1, ${c-1})">❮</a>
               <a class="next nextentertainment" onclick="plusSlides_entertainment(1, ${c-1})">❯</a>
