@@ -257,6 +257,10 @@ body{
 	bottom: 3px;
 	left: 90px;
 }
+.MID_travelspot_button:hover {
+	background-color: #ffffff;
+	color: rgb(255, 136, 57);
+  }
 /* Next & previous buttons */
 .prev, .next {
 	cursor: pointer;
