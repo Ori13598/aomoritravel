@@ -1,4 +1,6 @@
+
 /*Generate HTML SIGHTSEEING*/
+  
   let sightseeingHTML="";
   let array_sightseeing_carousel =[];
   let array_sightseeing_slideindex =[];
@@ -7,18 +9,19 @@
     sightseeingHTML +=`
           <div class="MID_travelspot">
             <div class="MID_travelspot_carousel_sightseeing${a} fade">
-                <img class="MID_travelspot_image_img" src=${DB_sightseeing_JAN[`${a-1}`].image1}>
-                <p class ="MID_travelspot_infor_tag">${DB_sightseeing_JAN[`${a-1}`].content1.jpcontent}</p>
+              <p class ="MID_travelspot_infor">${DB_sightseeing_JAN[`${a-1}`].content1.jpcontent}</p>
+              <a class ="MID_travelspot_infor_tag" href="${DB_sightseeing_JAN[`${a-1}`].hatstag1.link }" target="_blank">${DB_sightseeing_JAN[`${a-1}`].hatstag1.hastag}</a>
             </div>
             <div class="MID_travelspot_carousel_sightseeing${a} fade">
-                <img class="MID_travelspot_image_img" src="${DB_sightseeing_JAN[`${a-1}`].image2}">
-              <p class ="MID_travelspot_infor_tag">${DB_sightseeing_JAN[`${a-1}`].content2.jpcontent}</p>
+              <p class ="MID_travelspot_infor">${DB_sightseeing_JAN[`${a-1}`].content2.jpcontent}</p>
+              <a class ="MID_travelspot_infor_tag" href="${DB_sightseeing_JAN[`${a-1}`].hatstag2.link}" target="_blank">${DB_sightseeing_JAN[`${a-1}`].hatstag2.hastag}</a>
             </div>
             <div class="MID_travelspot_carousel_sightseeing${a} fade">
-                <img class="MID_travelspot_image_img" src="${DB_sightseeing_JAN[`${a-1}`].image3}">
-              <p class ="MID_travelspot_infor_tag">${DB_sightseeing_JAN[`${a-1}`].content3.jpcontent}</p>
+              <p class ="MID_travelspot_infor">${DB_sightseeing_JAN[`${a-1}`].content3.jpcontent}</p>
+              <a class ="MID_travelspot_infor_tag" href="${DB_sightseeing_JAN[`${a-1}`].hatstag3.link}" target="_blank">${DB_sightseeing_JAN[`${a-1}`].hatstag3.hastag}</a>
             </div>
-            <img class="MID_travelspot_image_gif" src="image/Apple.gif">
+            <button class="MID_travelspot_button likebutton" onclick="SJANcountlikebutton(${a})">いいね！</button>
+            <a class="countlike SJANcountlike${a}">0</a>
             <a class="prev prevsightseeing" onclick="plusSlides_sightseeing(-1, ${a-1})">❮</a>
             <a class="next nextsightseeing" onclick="plusSlides_sightseeing(1, ${a-1})">❯</a>
           </div>`;
@@ -27,7 +30,7 @@
     a++;
   });
   document.querySelector(".MID_content_sightseeing").innerHTML = sightseeingHTML;
-  
+
 
 /*Generate HTML FOODTOUR*/
 
@@ -39,17 +42,19 @@
     foodtourHTML +=`
             <div class="MID_travelspot">
               <div class="MID_travelspot_carousel_foodtour${b} fade">
-                <img class="MID_travelspot_image_img" src="${DB_foodtour_JAN[`${b-1}`].image1}">
-                <p class ="MID_travelspot_infor_tag">${DB_foodtour_JAN[`${b-1}`].content1.jpcontent}</p>
+                <p class ="MID_travelspot_infor">${DB_foodtour_JAN[`${b-1}`].content1.jpcontent}</p>
+                <a class ="MID_travelspot_infor_tag" href="${DB_foodtour_JAN[`${b-1}`].hatstag1.link }" target="_blank">${DB_foodtour_JAN[`${b-1}`].hatstag1.hastag}</a>
              </div>
               <div class="MID_travelspot_carousel_foodtour${b} fade">
-                <img class="MID_travelspot_image_img" src="${DB_foodtour_JAN[`${b-1}`].image2}">
-                <p class ="MID_travelspot_infor_tag">${DB_foodtour_JAN[`${b-1}`].content2.jpcontent}</p>
+                <p class ="MID_travelspot_infor">${DB_foodtour_JAN[`${b-1}`].content2.jpcontent}</p>
+                <a class ="MID_travelspot_infor_tag" href="${DB_foodtour_JAN[`${b-1}`].hatstag2.link }" target="_blank">${DB_foodtour_JAN[`${b-1}`].hatstag2.hastag}</a>
               </div>
               <div class="MID_travelspot_carousel_foodtour${b} fade">
-                <img class="MID_travelspot_image_img" src="${DB_foodtour_JAN[`${b-1}`].image3}">
-                <p class ="MID_travelspot_infor_tag">${DB_foodtour_JAN[`${b-1}`].content3.jpcontent}</p>
+                <p class ="MID_travelspot_infor">${DB_foodtour_JAN[`${b-1}`].content3.jpcontent}</p>
+                <a class ="MID_travelspot_infor_tag" href="${DB_foodtour_JAN[`${b-1}`].hatstag3.link }" target="_blank">${DB_foodtour_JAN[`${b-1}`].hatstag3.hastag}</a>
               </div>
+              <button class="MID_travelspot_button likebutton" onclick="TJANcountlikebutton(${b})">いいね！</button>
+              <a class="countlike TJANcountlike${b}">0</a>
               <a class="prev prevfoodtour" onclick="plusSlides_foodtour(-1, ${b-1})">❮</a>
               <a class="next nextfoodtour" onclick="plusSlides_foodtour(1, ${b-1})">❯</a>
             </div>`;
@@ -69,17 +74,19 @@
     entertainmentHTML +=`
             <div class="MID_travelspot">
               <div class="MID_travelspot_carousel_entertainment${c} fade">
-                  <img class="MID_travelspot_image_img" src="${DB_entertainment_JAN[`${c-1}`].image1}">
-                <p class ="MID_travelspot_infor_tag">${DB_entertainment_JAN[`${c-1}`].content1.jpcontent}</p>
+                <p class ="MID_travelspot_infor">${DB_entertainment_JAN[`${c-1}`].content1.jpcontent}</p>
+                <a class ="MID_travelspot_infor_tag" href="${DB_entertainment_JAN[`${c-1}`].hatstag1.link }" target="_blank">${DB_entertainment_JAN[`${c-1}`].hatstag1.hastag}</a>
               </div>
               <div class="MID_travelspot_carousel_entertainment${c} fade">
-                <img class="MID_travelspot_image_img" src="${DB_entertainment_JAN[`${c-1}`].image2}">
-                <p class ="MID_travelspot_infor_tag">${DB_entertainment_JAN[`${c-1}`].content2.jpcontent}</p>
+                <p class ="MID_travelspot_infor">${DB_entertainment_JAN[`${c-1}`].content2.jpcontent}</p>
+                <a class ="MID_travelspot_infor_tag" href="${DB_entertainment_JAN[`${c-1}`].hatstag2.link }" target="_blank">${DB_entertainment_JAN[`${c-1}`].hatstag2.hastag}</a>
               </div>
               <div class="MID_travelspot_carousel_entertainment${c} fade">
-                <img class="MID_travelspot_image_img" src="${DB_entertainment_JAN[`${c-1}`].image3}">
-                <p class ="MID_travelspot_infor_tag">${DB_entertainment_JAN[`${c-1}`].content3.jpcontent}</p>
+                <p class ="MID_travelspot_infor">${DB_entertainment_JAN[`${c-1}`].content3.jpcontent}</p>
+                <a class ="MID_travelspot_infor_tag" href="${DB_entertainment_JAN[`${c-1}`].hatstag3.link }" target="_blank">${DB_entertainment_JAN[`${c-1}`].hatstag3.hastag}</a>
               </div>
+              <button class="MID_travelspot_button likebutton" onclick="EJANcountlikebutton(${c})">いいね！</button>
+              <a class="countlike EJANcountlike${c}">0</a>
               <a class="prev preventertainment" onclick="plusSlides_entertainment(-1, ${c-1})">❮</a>
               <a class="next nextentertainment" onclick="plusSlides_entertainment(1, ${c-1})">❯</a>
             </div>`;
@@ -88,6 +95,7 @@
     c++;
   });
   document.querySelector(".MID_content_entertainment").innerHTML = entertainmentHTML;
+
 /*Function slideshow for sightseeing area*/
 let k = 0;
 array_sightseeing_slideindex.forEach(() =>{
@@ -110,8 +118,7 @@ function showSlides_sightseeing(n, no) {
   }
   x[array_sightseeing_slideindex[no]-1].style.display = "block";  
 }
-
-
+  
 /*Function slideshow for foodtour area*/
 let h = 0;
 array_foodtour_slideindex.forEach(() =>{
@@ -157,4 +164,3 @@ function showSlides_entertainment(n, no) {
   }
   x[array_entertainment_slideindex[no]-1].style.display = "block";  
 }
-
