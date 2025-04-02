@@ -1,15 +1,16 @@
+const countlikearray = [
+  {SJANdata:"",}
+];
 /*function count like for sightseeing*/
 let accountlike = 1;
 array_sightseeing_slideindex.forEach(() =>{
-  document.querySelector(`.SJANcountlike${accountlike}`).innerHTML =parseInt(localStorage.getItem(`SJANstored_countlike${accountlike}`)) || 0;
+  SJANcountlikebutton(accountlike);
   accountlike++;
 });
 
 function SJANcountlikebutton(acountlike) {
-  const countlike = parseInt(document.querySelector(`.SJANcountlike${acountlike}`).innerHTML);
-  document.querySelector(`.SJANcountlike${acountlike}`).innerHTML= countlike + 1;
-  const stored_countlike = parseInt(document.querySelector(`.SJANcountlike${acountlike}`).innerHTML);
-  localStorage.setItem(`SJANstored_countlike${acountlike}`,stored_countlike);
+const countlike = parseInt(document.querySelector(`.SJANcountlike${acountlike}`).innerHTML);
+document.querySelector(`.SJANcountlike${acountlike}`).innerHTML= countlike + 1;
 };
 
 function SFEBcountlikebutton(acountlike) {
@@ -18,45 +19,64 @@ function SFEBcountlikebutton(acountlike) {
   const stored_countlike = parseInt(document.querySelector(`.SFEBcountlike${acountlike}`).innerHTML);
   localStorage.setItem(`SFEBstored_countlike${acountlike}`,stored_countlike);
 };
-
-/*function count like for foodtour*/
-let bccountlike = 1;
-array_sightseeing_slideindex.forEach(() =>{
-  document.querySelector(`.TJANcountlike${bccountlike}`).innerHTML =parseInt(localStorage.getItem(`TJANstored_countlike${bccountlike}`)) || 0;
-  bccountlike++;
-});
-
-function TJANcountlikebutton(bcountlike) {
-  const countlike = parseInt(document.querySelector(`.TJANcountlike${bcountlike}`).innerHTML);
-  document.querySelector(`.TJANcountlike${bcountlike}`).innerHTML= countlike + 1;
-  const stored_countlike = parseInt(document.querySelector(`.TJANcountlike${bcountlike}`).innerHTML);
-  localStorage.setItem(`TJANstored_countlike${bcountlike}`,stored_countlike);
+function SMARcountlikebutton(acountlike) {
+  const countlike = parseInt(document.querySelector(`.SMARcountlike${acountlike}`).innerHTML);
+  document.querySelector(`.SMARcountlike${acountlike}`).innerHTML= countlike + 1;
+  const stored_countlike = parseInt(document.querySelector(`.SMARcountlike${acountlike}`).innerHTML);
+  localStorage.setItem(`SMARstored_countlike${acountlike}`,stored_countlike);
+};
+function SAPRcountlikebutton(acountlike) {
+  const countlike = parseInt(document.querySelector(`.SAPRcountlike${acountlike}`).innerHTML);
+  document.querySelector(`.SAPRcountlike${acountlike}`).innerHTML= countlike + 1;
+  const stored_countlike = parseInt(document.querySelector(`.SAPRcountlike${acountlike}`).innerHTML);
+  localStorage.setItem(`SAPRstored_countlike${acountlike}`,stored_countlike);
+};
+function SMAYcountlikebutton(acountlike) {
+  const countlike = parseInt(document.querySelector(`.SMAYcountlike${acountlike}`).innerHTML);
+  document.querySelector(`.SMAYcountlike${acountlike}`).innerHTML= countlike + 1;
+  const stored_countlike = parseInt(document.querySelector(`.SMAYcountlike${acountlike}`).innerHTML);
+  localStorage.setItem(`SMAYstored_countlike${acountlike}`,stored_countlike);
+};
+function SJUNcountlikebutton(acountlike) {
+  const countlike = parseInt(document.querySelector(`.SJUNcountlike${acountlike}`).innerHTML);
+  document.querySelector(`.SJUNcountlike${acountlike}`).innerHTML= countlike + 1;
+  const stored_countlike = parseInt(document.querySelector(`.SJUNcountlike${acountlike}`).innerHTML);
+  localStorage.setItem(`SJUNstored_countlike${acountlike}`,stored_countlike);
+};
+function SJULcountlikebutton(acountlike) {
+  const countlike = parseInt(document.querySelector(`.SJULcountlike${acountlike}`).innerHTML);
+  document.querySelector(`.SJULcountlike${acountlike}`).innerHTML= countlike + 1;
+  const stored_countlike = parseInt(document.querySelector(`.SJULcountlike${acountlike}`).innerHTML);
+  localStorage.setItem(`SJULstored_countlike${acountlike}`,stored_countlike);
+};
+function SAUGcountlikebutton(acountlike) {
+  const countlike = parseInt(document.querySelector(`.SAUGcountlike${acountlike}`).innerHTML);
+  document.querySelector(`.SAUGcountlike${acountlike}`).innerHTML= countlike + 1;
+  const stored_countlike = parseInt(document.querySelector(`.SAUGcountlike${acountlike}`).innerHTML);
+  localStorage.setItem(`SAUGstored_countlike${acountlike}`,stored_countlike);
+};
+function SSEPcountlikebutton(acountlike) {
+  const countlike = parseInt(document.querySelector(`.SSEPcountlike${acountlike}`).innerHTML);
+  document.querySelector(`.SSEPcountlike${acountlike}`).innerHTML= countlike + 1;
+  const stored_countlike = parseInt(document.querySelector(`.SSEPcountlike${acountlike}`).innerHTML);
+  localStorage.setItem(`SSEPstored_countlike${acountlike}`,stored_countlike);
+};
+function SOCTcountlikebutton(acountlike) {
+  const countlike = parseInt(document.querySelector(`.SOCTcountlike${acountlike}`).innerHTML);
+  document.querySelector(`.SOCTcountlike${acountlike}`).innerHTML= countlike + 1;
+  const stored_countlike = parseInt(document.querySelector(`.SOCTcountlike${acountlike}`).innerHTML);
+  localStorage.setItem(`SOCTstored_countlike${acountlike}`,stored_countlike);
+};
+function SNOVcountlikebutton(acountlike) {
+  const countlike = parseInt(document.querySelector(`.SNOVcountlike${acountlike}`).innerHTML);
+  document.querySelector(`.SNOVcountlike${acountlike}`).innerHTML= countlike + 1;
+  const stored_countlike = parseInt(document.querySelector(`.SNOVcountlike${acountlike}`).innerHTML);
+  localStorage.setItem(`SNOVstored_countlike${acountlike}`,stored_countlike);
 };
 
-function TFEBcountlikebutton(bcountlike) {
-  const countlike = parseInt(document.querySelector(`.TFEBcountlike${bcountlike}`).innerHTML);
-  document.querySelector(`.TFEBcountlike${bcountlike}`).innerHTML= countlike + 1;
-  const stored_countlike = parseInt(document.querySelector(`.TFEBcountlike${bcountlike}`).innerHTML);
-  localStorage.setItem(`TFEBstored_countlike${bcountlike}`,stored_countlike);
-};
-
-/*function count like for entertainment*/
-let cccountlike = 1;
-array_sightseeing_slideindex.forEach(() =>{
-  document.querySelector(`.EJANcountlike${cccountlike}`).innerHTML =parseInt(localStorage.getItem(`EJANstored_countlike${cccountlike}`)) || 0;
-  cccountlike++;
-});
-
-function EJANcountlikebutton(ccountlike) {
-  const countlike = parseInt(document.querySelector(`.EJANcountlike${ccountlike}`).innerHTML);
-  document.querySelector(`.EJANcountlike${ccountlike}`).innerHTML= countlike + 1;
-  const stored_countlike = parseInt(document.querySelector(`.EJANcountlike${ccountlike}`).innerHTML);
-  localStorage.setItem(`EJANstored_countlike${ccountlike}`,stored_countlike);
-};
-
-function EFEBcountlikebutton(ccountlike) {
-  const countlike = parseInt(document.querySelector(`.EFEBcountlike${ccountlike}`).innerHTML);
-  document.querySelector(`.EFEBcountlike${ccountlike}`).innerHTML= countlike + 1;
-  const stored_countlike = parseInt(document.querySelector(`.EFEBcountlike${ccountlike}`).innerHTML);
-  localStorage.setItem(`EFEBstored_countlike${ccountlike}`,stored_countlike);
+function SDECcountlikebutton(acountlike) {
+  const countlike = parseInt(document.querySelector(`.SDECcountlike${acountlike}`).innerHTML);
+  document.querySelector(`.SDECcountlike${acountlike}`).innerHTML= countlike + 1;
+  const stored_countlike = parseInt(document.querySelector(`.SDECcountlike${acountlike}`).innerHTML);
+  localStorage.setItem(`SDECstored_countlike${acountlike}`,stored_countlike);
 };
